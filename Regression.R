@@ -16,3 +16,6 @@ lm(y ~ x ,a)
 a.lm = lm(y ~ x ,a)
 abline(a.lm)
 summary(a.lm)
+## Normal distribution density
+plot(dnorm)
+curve(dnorm,-10,10)
