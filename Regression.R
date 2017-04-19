@@ -19,3 +19,5 @@ summary(a.lm)
 ## Normal distribution density
 plot(dnorm)
 curve(dnorm,-3,3, xlim=c(-10,10), ylim=c(0,0.7))
+customdnorm <- function(x){dnorm(x, -2, 0.8)}
+curve(customdnorm, -5,1, add=TRUE, col="red")
