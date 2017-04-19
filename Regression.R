@@ -27,3 +27,6 @@ curve(customdnorm, -1.5,7.5, add=TRUE, col="blue")
 ## Test random number generator
 hist(rnorm(10),  5,  freq=F, xlim=c(-3,3))
 curve(dnorm,-3,3, add=T)
+
+hist(rnorm(100),  freq=F, xlim=c(-3,3))
+curve(dnorm,-3,3, add=T)
