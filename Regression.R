@@ -21,3 +21,5 @@ plot(dnorm)
 curve(dnorm,-3,3, xlim=c(-10,10), ylim=c(0,0.7))
 customdnorm <- function(x){dnorm(x, -2, 0.8)}
 curve(customdnorm, -5,1, add=TRUE, col="red")
+customdnorm <- function(x){dnorm(x, 3, 1.5)}
+curve(customdnorm, -1.5,7.5, add=TRUE, col="blue")
