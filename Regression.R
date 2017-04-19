@@ -7,3 +7,6 @@ a <- data.frame(x, y)
 # Data frame
 data.frame(x, y)
 a <- data.frame(x, y)
+# Simulation for regression
+set.seed(1)
+a$y <- a$y +rnorm(3)
