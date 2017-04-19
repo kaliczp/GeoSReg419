@@ -23,3 +23,7 @@ customdnorm <- function(x){dnorm(x, -2, 0.8)}
 curve(customdnorm, -5,1, add=TRUE, col="red")
 customdnorm <- function(x){dnorm(x, 3, 1.5)}
 curve(customdnorm, -1.5,7.5, add=TRUE, col="blue")
+
+## Test random number generator
+hist(rnorm(10),  5,  freq=F, xlim=c(-3,3))
+curve(dnorm,-3,3, add=T)
