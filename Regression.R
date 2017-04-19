@@ -30,3 +30,14 @@ curve(dnorm,-3,3, add=T)
 
 hist(rnorm(100),  freq=F, xlim=c(-3,3))
 curve(dnorm,-3,3, add=T)
+
+## Recall regression
+## Drop the intercept term
+a.lm = lm(y ~ x - 1,a)
+a.lm
+summary(a.lm)
+
+## Covariance and correlation
+y <- rnorm(3,sd=2)
+cov(x,y)
+cor(x,y)
