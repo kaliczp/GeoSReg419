@@ -10,3 +10,9 @@ a <- data.frame(x, y)
 # Simulation for regression
 set.seed(1)
 a$y <- a$y +rnorm(3)
+## Regression
+plot(y ~ x ,a, asp=TRUE)
+lm(y ~ x ,a)
+a.lm = lm(y ~ x ,a)
+abline(a.lm)
+summary(a.lm)
