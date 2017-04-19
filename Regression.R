@@ -18,4 +18,4 @@ abline(a.lm)
 summary(a.lm)
 ## Normal distribution density
 plot(dnorm)
-curve(dnorm,-10,10)
+curve(dnorm,-3,3, xlim=c(-10,10), ylim=c(0,0.7))
